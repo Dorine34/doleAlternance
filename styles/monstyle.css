@@ -104,7 +104,7 @@ p > a[href^=http]:hover {
 /** Entête **/
 
 #logo-UFC{
-    margin: 12px 21px 7px 141px;
+    margin: 159px 8px -10px 42px;
     
 }
 
@@ -120,15 +120,15 @@ p > a[href^=http]:hover {
     position: absolute;
 }
 #logo-UFC {
-    margin: 127px 9px 5px 17px;
+    margin: 157px 9px 21px 17px;
 }
 
 h1 {
     color: #000;
     bottom: 0px;
     text-shadow: 2px 2px 5px var(--color1);
-    font-size: 40px;
-    margin: 12px 21px 7px 141px;
+    font-size: 46px;
+    margin: 9px 27px 142px 196px;
     font-weight: bold;
 }
 
