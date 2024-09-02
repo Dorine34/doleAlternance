@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+footer {
+    background-color:  #743A8C5E;
+
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+
+/** -- DEBUT DE LA FEUILLE DE STYLE -- **/
+
+body {
+    font-family: arial, verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    --color1: #743A8C;
+    background-color: lightgrey;
+}
+
+#bcContenu {
+    margin: 0 auto;
+    width: 960px;
+    background-color: white;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--color1);
+}
+a:hover {
+    text-decoration: underline;   
+}
+
+h3 {
+    padding-top: 10px;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color1);
+    border-bottom: solid 2px var(--color1);
+}
+h4 {
+    margin: 30px 0 0 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: bold; 
+    color: var(--color1);
+}
+
+p > a[href^=http]:hover {
+    padding-right: 20px;
+    background-image: url(../images/lien_externe.gif);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+/** Entête **/
+
+#bcContenu > header {
+    position: relative;
+    height: 300px;
+    background: transparent url(../images/etudiants2.png);
+}
+
+#bcContenu > header > * {
+    position: absolute;
+}
+
+h1 {
+    color: #000;
+    bottom: 0px;
+    text-shadow: 2px 2px 5px var(--color1);
+    font-size: 45px;
+    margin: 20px 10px 20px 50px;
+    font-weight: bold;
+}
+
+#bcContenu > header > aside {
+    top: 160px;
+    left: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+#bcContenu > header > a:nth-of-type(1) {
+    right: 10px;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+    max-width: 50%;
+    max-height: 50%;
+    background: url("../images/logoF2.png") no-repeat;
+}
+#bcContenu > header > a:nth-of-type(2) {
+    right: 10px;
+    bottom: 10px;
+    width: 218px;
+    height:84px;
+    background: transparent url("../images/logo.png") no-repeat;
+}
+
+/** Menu **/
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: var(--color1);
+    padding: 5px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+nav a, nav a:visited {
+    color: white;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: none;
+}
+nav a > span {
+    visibility: hidden;
+}nav a:hover > span {
+    visibility: visible;
+}
+
+nav li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    padding: 0 20px 0 30px;
+}
+.pdf {
+    width: 98%;
+}
+
+nav li:last-child {
+    float: right;
+    text-align: right;
+    width: 300px;
+    padding-right: 20px;
+}
+
+/** Contenu de la page **/
+
+main > *{
+    padding: 10px;
+}
+
+section p {
+    margin: 10px 5px;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+#background {
+    height: 434px;
+    background-image: url(../images/resto-u.jpg);
+    background-attachment: fixed;
+    background-size: 960px;
+    background-repeat: no-repeat;
+    background-position: center 60%;
+}
+
+
+ol {
+    list-style-type: decimal;
+    padding-bottom: 5px;
+}
+
+*:not(nav) > ul > li, ol > li {
+    margin: 10px 0 5px 40px;
+}
+*:not(nav) > ul > li {
+    padding-left: 5px;
+}
+    
+*:not(nav) > ul {
+    list-style-type: "\1F44D";
+}
+
+section[id] {
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+abbr {
+    cursor: default;   
+}
+
+/** Zone contenant les 3 liens de navigation intra-page (carrés gris) **/ 
+.liens {
+    margin: 0;
+    padding: 20px;
+}
+
+.liens a {
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+}
+
+
+
+/* Style pour le conteneur du formulaire */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Style pour le titre du formulaire */
+.container h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+/* Style pour les labels */
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styles pour les champs de saisie */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color:  #743A8C14;
+    ;
+}
+
+/* Permet de redimensionner la zone de texte verticalement uniquement */
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Style pour le bouton de soumission */
+.contact-form button {
+    background-color: var(--color1);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+}
+
+
+/* Style pour le conteneur principal */
+.container {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Centrer verticalement les éléments dans le conteneur */
+    max-width: 800px; /* Largeur maximale du conteneur */
+    background-color: #fff; /* Couleur de fond du conteneur */
+    padding: 20px; /* Espacement intérieur du conteneur */
+    border-radius: 8px; /* Coins arrondis pour le conteneur */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
+}
+
+
+/* Style pour l'image */
+.image {
+    flex: 1; /* Permet à l'image de prendre 1 part de l'espace */
+    padding-right: 20px; /* Espacement entre l'image et le texte */
+}
+
+.image img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas de son conteneur */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+}
+
+/* Style pour le texte */
+.texte {
+    flex: 2; /* Permet au texte de prendre 2 parts de l'espace */
+}
